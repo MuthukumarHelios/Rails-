@@ -1,0 +1,19 @@
+<h4>create method</h4>
+
+<%= form_tag shop_create_path(params[:owner_id]) do %>	
+
+
+	Shop Name:
+	<%= text_field_tag "name", params[:name],  id: "name" %><br>
+    
+
+    Contact:
+	<%= text_field_tag "Phone", params[:Phone], id: "Phone"%><br>
+    
+
+    Address:
+    <%= text_field_tag "address", params[:address],  id:"address" %><br>
+	
+   
+	<%= submit_tag 'create'%>
+<% end %>

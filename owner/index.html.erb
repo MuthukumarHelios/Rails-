@@ -1,0 +1,7 @@
+<h5> welcome page</h5>
+<% @owner.each do |owner| %>
+	<li>
+	  <%= owner.name %>
+      <%= link_to 'create_shop', shop_new_path(owner.id)  %>
+	</li>
+<% end %>

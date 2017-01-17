@@ -1,0 +1,8 @@
+<h2>editing goes here</h2>
+
+<%= form_tag user_update_path(@user) do%>
+	<%= text_field_tag "name", params[:name], value: @user.name %>
+	<%= submit_tag 'Submit'%>
+<% end %>
+
+
